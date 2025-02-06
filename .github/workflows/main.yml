@@ -31,8 +31,8 @@ jobs:
           context: . 
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mywebsite:${{ github.run_id }}
-          platforms: linux/amd64,linux/arm64
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/game:${{ github.run_id }}
+          platforms: linux/amd64
           
   update-helm-chart:   
     runs-on: ubuntu-latest
