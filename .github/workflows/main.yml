@@ -1,16 +1,18 @@
 name: CI
 permissions:
   contents: write
+  
 on:
   push:    
-  branches:
-      - main    paths-ignore:
-      - 'helm/**'      
-      - Readme.md
+    branches:
+        - main
+    paths-ignore:
+        - 'helm/**'      
+        - Readme.md
 jobs:
   push:   
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: checkout repository
         uses: actions/checkout@v4
         
