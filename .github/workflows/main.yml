@@ -10,7 +10,7 @@ on:
 jobs:
   push:   
   runs-on: ubuntu-latest
-    steps:
+  steps:
       - name: checkout repository
         uses: actions/checkout@v4
         
